@@ -1,5 +1,5 @@
 import { connect } from "react-redux"
-import {updateTasks} from './Redux/actions'
+import {updateTasks} from '../Redux/actions'
 
 
 function ManageTasks(props){

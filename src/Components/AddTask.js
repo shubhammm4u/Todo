@@ -1,7 +1,7 @@
 import { useState } from "react"
 import { connect } from "react-redux"
-import {addToTodaysTask, showError} from './Redux/actions'
-import './custom.css'
+import {addToTodaysTask, showError} from '../Redux/actions'
+import '../custom.css'
 
 function AddTask(props){
 
@@ -12,7 +12,7 @@ function AddTask(props){
 
 
     const addTask=()=>{
-        props.localState.todaystask.find(task=>task.name==taskName)?
+        props.localState.todaystask.find(task=>task.name.toLowerCase()==taskName.toLowerCase())?
             props.showError(true)
         :
             props.addToTodaysTask({taskName, category})

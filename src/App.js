@@ -1,7 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
-import ManageTasks from './ManageTasks'
-import AddTask from './AddTask'
+import ManageTasks from './Components/ManageTasks'
+import AddTask from './Components/AddTask'
 
 function App() {
   return (
